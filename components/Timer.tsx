@@ -42,17 +42,17 @@ const Timer: React.FC<TimerProps> = ({ duration }) => {
         {minutes.toString().padStart(2, "0")}:
         {seconds.toString().padStart(2, "0")}
       </div>
-      <div>
+      <div id="buttons">
         {isPaused ? (
-          <button id="btn1" onClick={handleResume}>
-            RESUME
+          <button className="button" onClick={handleResume}>
+            START
           </button>
         ) : (
-          <button id="btn1" onClick={handlePause}>
+          <button className="button" onClick={handlePause}>
             PAUSE
           </button>
         )}
-        <button onClick={handleReset}>RESET</button>
+        <button className="button" onClick={handleReset}>RESET</button>
       </div>
     </div>
   );
