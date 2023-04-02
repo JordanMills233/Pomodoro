@@ -37,19 +37,24 @@ const Timer: React.FC<TimerProps> = ({ duration }) => {
   const seconds = timeLeft % 60;
 
   return (
-    <>
-      <div>
+    <div id="pomodoro-container">
+      <div id="mainClock">
         {minutes.toString().padStart(2, "0")}:
         {seconds.toString().padStart(2, "0")}
       </div>
       <div>
         {isPaused ? (
-          <button onClick={handleResume}>RESUME</button>
+          <button id="btn1" onClick={handleResume}>
+            RESUME
+          </button>
         ) : (
-          <button onClick={handlePause}>PAUSE</button>
+          <button id="btn1" onClick={handlePause}>
+            PAUSE
+          </button>
         )}
+        <button onClick={handleReset}>RESET</button>
       </div>
-    </>
+    </div>
   );
 };
 

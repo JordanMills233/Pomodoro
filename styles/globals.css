@@ -3,3 +3,36 @@
     color-scheme: dark;
   }
 }
+
+#pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  --foreground-color: #fff;
+}
+
+#btn1 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+#mainClock {
+  font-size: 8rem;
+  letter-spacing: -0.25rem;
+  font-variant-numeric: tabular-nums;
+}
